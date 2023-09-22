@@ -12,8 +12,20 @@
     <div class="main-container">
         <section class="aside__menu">
             <a href="#"><img src="./assets/svg/logo.svg" class="logo"></a>
+            <hr class="hr__logo">
             <nav>
-
+                <ul>
+                    <li><a href="#"><img src="./assets/svg/pizza.svg" alt="Пицца">Пицца</a></li>
+                    <li><a href="#"><img src="./assets/svg/sets.svg" alt="Сеты">Сеты</a></li>
+                    <li><a href="#"><img src="./assets/svg/wok.svg" alt="WOK">WOK</a></li>
+                    <li><a href="#"><img src="./assets/svg/rolls.svg" alt="Роллы">Роллы</a></li>
+                    <li><a href="#"><img src="./assets/svg/sushi.svg" alt="Суши">Суши</a></li>
+                    <li><a href="#"><img src="./assets/svg/salads.svg" alt="Салаты">Салаты</a><span>Скоро</span></li>
+                    <li><a href="#"><img src="./assets/svg/soups.svg" alt="Супы">Супы</a><span>Скоро</span></li>
+                    <li><a href="#"><img src="./assets/svg/corn-dogs.svg" alt="Корн доги">Корн доги</a></li>
+                    <li><a href="#"><img src="./assets/svg/drinks.svg" alt="Напитки">Напитки</a></li>
+                    <li><a href="#"><img src="./assets/svg/action.svg" alt="Акции">Акции</a></li>
+                </ul>
             </nav>
         </section>
         <div class="middle-container">
@@ -47,7 +59,30 @@
             </header>
             <main>
                 <section class="slider">
-                    <img src="./assets/img/philadelfia-salmon.jpg" alt="Реклама сета">
+                    <div class="container">
+                        <input type="radio" name="radio" id="r1" checked>
+                        <input type="radio" name="radio" id="r2">
+                        <input type="radio" name="radio" id="r3">
+                        <input type="radio" name="radio" id="r4">
+                        <input type="radio" name="radio" id="r5">
+                        <div class="slides-img">
+                            <img src="./assets/img/philadelfia-salmon.jpg" alt="Реклама сета" class="s1">
+                            <img src="./assets/img/philadelfia-salmon.jpg" alt="Реклама сета">
+                            <img src="./assets/img/philadelfia-salmon.jpg" alt="Реклама сета">
+                            <img src="./assets/img/philadelfia-salmon.jpg" alt="Реклама сета">
+                            <img src="./assets/img/philadelfia-salmon.jpg" alt="Реклама сета">
+                        </div>
+                        <div class="nav-block">
+                            <div class="nav">
+                                <label for="r1" class="circle-area"><div class="circle"></div></label>
+                                <label for="r2" class="circle-area"><div class="circle"></div></label>
+                                <label for="r3" class="circle-area"><div class="circle"></div></label>
+                                <label for="r4" class="circle-area"><div class="circle"></div></label>
+                                <label for="r5" class="circle-area"><div class="circle"></div></label>
+                            </div>
+                        </div>
+                    </div>
+
                 </section>
                 <section class="gallery">
 
@@ -66,12 +101,19 @@
         <section class="aside__basket">
             <div class="basket-block">
                 <div class="basket">
-                    <p class="basket__text_units">Ваша корзина пуста.</p>
-                    <p class="basket__text_call">Добавьте же скорее что-нибудь!</p>
+                    <p class="text__bold">Ваша корзина пуста.</p>
+                    <p class="text__normal">Добавьте же скорее что-нибудь!</p>
                 </div>
                 <div class="delivery">
                     <p class="basket__text_upt">Бесплатная доставка от 800 COM</p>
                 </div>
+            </div>
+
+            <div class="map-block">
+                <img src="./assets/img/map.png" alt="Карта" class="map">
+                <div class="map-point"><img src="./assets/svg/map-point.svg"></div>
+                <p class="text__bold">Укажите адрес</p>
+                <p class="text__normal">И узнайте время доставки</p>
             </div>
         </section>
     </div>
