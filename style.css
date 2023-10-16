@@ -101,7 +101,7 @@ a:hover {
 
 .aside__menu, .aside__basket {
     max-width: 375px;
-    background-color: #FFFFFF;  
+    background-color: #FFFFFF;
 }
 
 .aside__menu {
@@ -122,21 +122,22 @@ a:hover {
     margin-left: 25px;
 }
 
-.aside__menu ul li a {
+.menu_link {
+    position: relative;
     display: flex;
     gap: 20px;
     align-items: center;
     font-size: 22px;
 }
 
-.aside__menu ul li span {
+.menu__link[data-badges]::before {
+    content: attr(data-badges);
     position: absolute;
-    top: -10px;
-    left: 105px;
-    padding: 1px 8px 1px 8px;
+    margin-bottom: 30px;
+    margin-left: 75px;
+    padding: 2px 7px;
     border-radius: 10px;
     background-color:#EB5757;
-
     color: #ffffff;
     font-size: 11px;
     text-transform: uppercase;
@@ -286,7 +287,7 @@ header {
 }
 
 .text__bold {
-    font-size: 24px;  
+    font-size: 24px;
     font-weight: 500;
     text-align: center;
     margin-top: 12px;
