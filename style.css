@@ -419,6 +419,30 @@ input[name="radio"] {
     margin-left: -400%;
 }
 
+.gallery__wrapper {
+    display: grid;
+    grid-template-columns: 450px 224px 224px;
+    gap: 30px;
+    justify-content: center;
+}
+
+.gallery__wrapper div {
+    position: relative;
+}
+
+.gallery__wrapper p {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.gallery__wrapper div:nth-child(3) {
+    margin-left: -8px;
+}
+
 @media screen {
     #r1:checked ~ .nav-block > .nav > .circle-area:nth-child(1) > .circle,
     #r2:checked ~ .nav-block > .nav > .circle-area:nth-child(2) > .circle,
