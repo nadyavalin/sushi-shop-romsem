@@ -15,7 +15,7 @@ html {
 
 body {
     background-color: #FFFFFF;
-    color:#000000;
+    color: #000000;
     font-family: 'DIN Pro', sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -63,7 +63,7 @@ body {
 }
 
 main {
-    height: 100vh;
+    height: 100%;
 }
 
 ul {
@@ -122,7 +122,7 @@ a:hover {
     margin-left: 25px;
 }
 
-.menu_link {
+.menu__link {
     position: relative;
     display: flex;
     gap: 20px;
@@ -134,7 +134,7 @@ a:hover {
     content: attr(data-badges);
     position: absolute;
     margin-bottom: 30px;
-    margin-left: 75px;
+    margin-left: 105px;
     padding: 2px 7px;
     border-radius: 10px;
     background-color:#EB5757;
@@ -332,7 +332,7 @@ header {
 }
 
 /* Slider */
-.container {
+.slider__container {
     margin: 0 auto;
     max-width: fit-content;
     padding: 1rem;
@@ -345,6 +345,7 @@ header {
     overflow-x: hidden;
     border-radius: 5px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .slides-img img {
@@ -428,6 +429,13 @@ input[name="radio"] {
 
 .gallery__wrapper div {
     position: relative;
+    scale: 1.0;
+    transition: scale 0.5s ease-in-out;
+}
+
+.gallery__wrapper div:hover {
+    scale: 1.1;
+    cursor: pointer;
 }
 
 .gallery__wrapper p {
@@ -443,13 +451,157 @@ input[name="radio"] {
     margin-left: -8px;
 }
 
+.popular-slider {
+    padding: 0 111px;
+    margin-bottom: 52px;
+}
+
+.popular-slider__container {
+    display: flex;
+    justify-content: center;
+    gap: 50px; 
+}
+
+.popular-slider__arrow-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popular-slider__arrow {
+    background-color: #111111;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.popular-slider__arrow:hover {
+    background-color: #716d6d;
+}
+
+.popular-slider__arrow_left {
+    width: 13px;
+    height: 27px;
+}
+
+.popular-slider__arrow_right {
+    width: 13px;
+    height: 27px;
+}
+
+.popular-slider__menu {
+    display: flex;
+    gap: 30px;
+    margin-top: 52px;
+}
+
+.popular-slider__menu_link {
+    color: #000000;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.popular-slider__menu_link:active {
+    color:  #A4ACAD;
+    text-decoration-line: underline;
+}
+
+.popular-slider__cards {
+    margin-top: 30px;
+    width: 950px;
+}
+
+.popular-slider__cards_line {
+    display: flex;
+    gap: 40px;
+    overflow: hidden;
+}
+
+.popular-slider__card {
+    position: relative;
+    width: 289px;
+    height: 397px;
+    background-color: #FFFFFF;
+}
+
+.popular-slider__card_top {
+    padding: 0 17px;
+}
+
+.card__text {
+    margin-top: 15px;
+    width: 250px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.card__title {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.card__weight {
+    color: #A4ACAD;
+    font-size: 18px;
+}
+
+.card__hr {
+    position: absolute;
+    width: 290px;
+    height: 0.5px;
+    background-color: #A4ACAD;
+    bottom: 60px;
+}
+
+.popular-slider__card_bottom {
+    position: absolute;
+    padding: 10px 17px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 0;
+}
+
+.card__cost {
+    font-size: 24px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+.btn {
+    background-color: #FF9846;
+    border-radius: 5px;
+    color: #F2F2F2;
+    font-size: 24px;
+    font-weight: 500;
+    scale: 1.0;
+    transition: scale 0.5s ease-in-out;
+}
+
+.btn:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.card__btn {
+    padding: 5px 40px;
+}
+
 @media screen {
     #r1:checked ~ .nav-block > .nav > .circle-area:nth-child(1) > .circle,
     #r2:checked ~ .nav-block > .nav > .circle-area:nth-child(2) > .circle,
     #r3:checked ~ .nav-block > .nav > .circle-area:nth-child(3) > .circle,
     #r4:checked ~ .nav-block > .nav > .circle-area:nth-child(4) > .circle,
     #r5:checked ~ .nav-block > .nav > .circle-area:nth-child(5) > .circle {
-        border: 0.125rem solid #FF9846;;
+        border: 1px solid #FF9846;;
     }
 }
 
