@@ -121,7 +121,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="popular-slider">
+                <section class="popular-slider-section">
                     <div class="popular-slider__menu">
                         <a href="#" class="popular-slider__menu_link">Новинки</a>
                         <a href="#" class="popular-slider__menu_link">Популярное</a>
@@ -133,9 +133,10 @@
                             </div>
                         </div>
 
-                        <div class="popular-slider__cards">
-                            <div class="popular-slider__cards_line">
-                                <div class="popular-slider__card">
+                        <div class="popular-slider">
+                            <ul class="popular-slider__line">
+                                <!-- Первый блок карточек -->
+                                <li class="popular-slider__card">
                                     <div class="popular-slider__card_top">
                                         <img src="./assets/img/salomon-set.jpg" alt="Саломон сет">
                                         <div class="card__text">
@@ -148,8 +149,8 @@
                                         <p class="card__cost">1500&nbsp;СОМ</p>
                                         <button class="btn card__btn">Хочу!</button>
                                     </div>
-                                </div>
-                                <div class="popular-slider__card">
+                                </li>
+                                <li class="popular-slider__card">
                                     <div class="popular-slider__card_top">
                                         <img src="./assets/img/philadelfia-n-salmon-set.jpg"
                                             alt="Филадельфия и лосось сет">
@@ -163,8 +164,8 @@
                                         <p class="card__cost">1150&nbsp;СОМ</p>
                                         <button class="btn card__btn">Хочу!</button>
                                     </div>
-                                </div>
-                                <div class="popular-slider__card">
+                                </li>
+                                <li class="popular-slider__card">
                                     <div class="popular-slider__card_top">
                                         <img src="./assets/img/philadelfia-biggest.jpg" alt="Самая большая Филадельфия">
                                         <div class="card__text">
@@ -177,9 +178,10 @@
                                         <p class="card__cost">2100&nbsp;СОМ</p>
                                         <button class="btn card__btn">Хочу!</button>
                                     </div>
-                                </div>
+                                </li>
+                                <!-- Первый блок карточек -->
                                 <!-- Повторение карточек -->
-                                <div class="popular-slider__card">
+                                <li class="popular-slider__card">
                                     <div class="popular-slider__card_top">
                                         <img src="./assets/img/salomon-set.jpg" alt="Саломон сет">
                                         <div class="card__text">
@@ -192,8 +194,8 @@
                                         <p class="card__cost">1500&nbsp;СОМ</p>
                                         <button class="btn card__btn">Хочу!</button>
                                     </div>
-                                </div>
-                                <div class="popular-slider__card">
+                                </li>
+                                <li class="popular-slider__card">
                                     <div class="popular-slider__card_top">
                                         <img src="./assets/img/philadelfia-n-salmon-set.jpg"
                                             alt="Филадельфия и лосось сет">
@@ -207,8 +209,8 @@
                                         <p class="card__cost">1150&nbsp;СОМ</p>
                                         <button class="btn card__btn">Хочу!</button>
                                     </div>
-                                </div>
-                                <div class="popular-slider__card">
+                                </li>
+                                <li class="popular-slider__card">
                                     <div class="popular-slider__card_top">
                                         <img src="./assets/img/philadelfia-biggest.jpg" alt="Самая большая Филадельфия">
                                         <div class="card__text">
@@ -221,10 +223,9 @@
                                         <p class="card__cost">2100&nbsp;СОМ</p>
                                         <button class="btn card__btn">Хочу!</button>
                                     </div>
-                                </div>
+                                </li>
                                 <!-- Повторение карточек -->
-                                
-                            </div>
+                            </ul>
                         </div>
                         <div class="popular-slider__arrow-block arrow-next">
                             <div class="popular-slider__arrow">
@@ -235,12 +236,66 @@
                     </div>
                 </section>
 
-                <section class="order">
-
+                <section class="order-text-block">
+                    <div class="order-text-block__container">
+                        <h2>Заказать суши в Бишкеке</h2>
+                        <p>Ресторан “Суши и Лапша” предлагаем своим клиентам самые вкусные суши с доставкой на дом,
+                            приготовленные по классическим и адаптированным к европейской аудитории рецептам, а также
+                            собственным наработкам наших поваров. Мы ценим время наших клиентов, поэтому вы можете
+                            заказать суши в Харькове с доставкой на дом или в офис.</p>
+                        <p>В нашем меню более 20 видов суши:</p>
+                        <div class="order-text__list">
+                            <ul>
+                                <li>Классические с сырым лососем, тунцом, окунем.</li>
+                                <li>Экзотические с тигровой креветкой, морским гребешком.</li>
+                                <li>Пикантные с копченым лососем, угрем.</li>
+                            </ul>
+                        </div>
+                        <p class="order-text-block__end">В меню также представлены гунканы: с начинкой из красной икры и
+                            тобико, а также феликсы, где японский майонез сочетается с рыбой, морепродуктами, угрем.
+                            Любители острых блюд могут
+                            купить суши с соусом спайси. Популярные начинки — копченая курица, снежный краб, креветки,
+                            гребешки, тунец, лосось и окунь.</p>
+                        <div class="order-text-block__link">
+                            <a href="#" class="order-text-block__more-info">
+                                Подробнее
+                                <img src="./assets/svg/arrow-down.svg" alt="">
+                            </a>
+                        </div>
+                        <hr class="order-text-block__hr">
+                    </div>
                 </section>
             </main>
             <footer>
-
+                <div class="footer__container">
+                    <div class="footer__about-us">
+                        <ul>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Доставка и оплата</a></li>
+                            <li><a href="#">Лента материалов</a></li>
+                            <li><a href="#">Политика возврата</a></li>
+                        </ul>
+                    </div>
+                    <div class="socials">
+                        <hr class="footer__hr">
+                        <div class="socials__block">
+                            <p class="socials__title">Введите номер</p>
+                            <input type="phone" placeholder="+996 (__) ___ __ __">
+                            <div class="socials__text">Выберите удобный мессенджер для общения</div>
+                            <div class="socials__items">
+                                <a href="#" target="_blank"><img src="./assets/svg/whatsapp.svg" alt="WhatsApp"></a>
+                                <a href="#" target="_blank"><img src="./assets/svg/telegram.svg" alt="Telegram"></a>
+                                <a href="#" target="_blank"><img src="./assets/svg/instagram.svg" alt="Instagram"></a>
+                            </div>
+                        </div>
+                        <hr class="footer__hr">
+                    </div>
+                    <div class="phones-address">
+                        <p>Тел: <a href="telephone:+996705188955">+996 705 188 955</a></p>
+                        <p>Тел: <a href="telephone:+996555188955">+996 555 188 955</a></p>
+                        <p>Адрес: Бакаева, 126</p>
+                    </div>
+                </div>
             </footer>
         </div>
         <section class="aside__basket">
